@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEAM UNITARIO XD - GO</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #38b911);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #43da3e;
+        }
+        .header h1 {
+            font-size: 8em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 10px #0f9647, 0 0 20px #09a02a;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px;
+            gap: 30px;
+        }
+        .member-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 5px solid #7e887e;
+            border-radius: 10px;
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .member-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #15b915;
+        }
+        .member-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 25%;
+            border: 6px solid #23ac2f;
+            margin-bottom: 15px;
+        }
+        .member-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #20c6cc;
+            text-shadow: 0 0 10px #a0aca3;
+        }
+        .member-card p {
+            font-size: 1em;
+            color: #ffffff;
+        }
+        .audio-player {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TEAM SOLITARIO</h1>
+        <p> "Cree en ti mismo y todo será posible"</p>
+    </div>
+    <div class="team-container">
+        <div class="member-card">
+            <img src="integrante01.JPG" alt="Airton Waldir Nina Meza">
+            <h2>AIRTON WALDIR</h2>
+            <p>NINA  MEZA</p>
+            <p>--------------------------------------------</p>
+            <p>MUNDO ARTISTICO - MUSIC</p>
+            <p>DJ AirtMix</p>
+        </div>
+        <div class="team-container">
+            <div class="member-card">
+                <img src="foto02.JPG" alt="Airton Waldir Nina Meza">
+                <h2>Informacion Personal</h2>
+                <p>Edad:23 Años</p>
+                <p>Carrera:Ingenieria de Sistemas E Informatica </p>
+                <p>Semestre actual: 7mo </p>
+                <p>Pasatiempos: Escuchar musica, producir remixes,caminar y mirar series. </p>
+                <p>Soy un estudiante en proceso,que ama la tecnologia asi mismo una persona bien social y alegre
+                    como por otro con el gusto por la musica, lugar donde libero todo el estres. </p>
+            </div>
+        </div>
+    </div>
+    <audio class="audio-player" controls autoplay loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>
